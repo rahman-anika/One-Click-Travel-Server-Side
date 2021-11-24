@@ -59,7 +59,7 @@ client.connect((err) => {
 
 
 
-    // Add booking/order and store it into database 
+    // Add booking and store it into database 
 
     app.post("/addOrders", (req, res) => {
         bookingsCollection.insertOne(req.body).then((result) => {
